@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="">
+        <label for="">tên</label>
+        <input type="text" class="name">
+    </div>
+    <div class="số">
+        <label for="">số</label>
+        <input type="text" class="phone">
+    </div>
+    <div class="">
+        <label for="">email</label>
+        <input type="text" class="email">
+    </div>
+    <button>Enter</button>
+    <script>
+        const name1=document.querySelector('.name');
+        const phone=document.querySelector('.phone');
+        const email=document.querySelector('.email');
+        const arr=[];
+        document.querySelector('button').addEventListener('click',e=>{
+           let obj={
+                name:name1.value,
+                phone:phone.value,
+                email:email.value,
+
+           }
+           arr.push(obj);
+           display();
+        })
+        function display(){
+            console.log(arr);
+        }
+    </script>
+</body>
+</html>
